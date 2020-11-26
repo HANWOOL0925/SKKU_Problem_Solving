@@ -1,42 +1,3 @@
-/* BAD BBBADADABBAD 7 3
-QWERT QWERQWEQWERTRQWERTWQWEQWERTWQWERTWERT 11 4
-
-(1)
-4 10
-ASDF ASASASDFDF
-4 3
-
-(2)
-4 10
-ASDF ASDASASDFF
-4 3
-
-(3)
-4 7
-ASDF AAASDFF
-4 4
-
-(4)
-4 11
-ASDF ASDFDFDASDF
-4 3
-
-(5)
-4 11
-ASDF ASDFDASASDF
-4 3
-
-(6)
-4 10
-ASDF ASDFDASDFF
-4 2
-
-(7)
-5 26
-QWERT QQWERQWQWQWERTRQQQWEQWERTT
-11 7
-*/
-
 // 위쪽 단면에 문자열(M)이 새겨진 레고 블록으로 성벽을 쌓았을 때 성벽의 문자열(N)이 생긴다.
 // (0 < M (블록 문자열의 길이) < 36), (M <= N (성벽의 문자열의 길이) < 1000)일 때,
 // 성벽을 쌓기 위한 레고의 최소 개수와 성벽이 가질 수 있는 최소 높이를 구하라.
@@ -75,7 +36,7 @@ void calculator() {
 	int bount = 0;
 	int comp = 0;
 
-	complete = malloc(sizeof(int) * (wall_length / block_length + 1)); // ����ü ������ ���� �� �ִ� �ִ� ����
+	complete = malloc(sizeof(int) * (wall_length / block_length + 1));
 	height = malloc(sizeof(int) * (wall_length / block_length) * 2);
 
 	for (i = 0; i < (wall_length / block_length) * 2; i++) {
@@ -166,3 +127,42 @@ int main()
 
 	return 0;
 }
+
+/* BAD BBBADADABBAD 7 3
+QWERT QWERQWEQWERTRQWERTWQWEQWERTWQWERTWERT 11 4
+
+(1)
+4 10
+ASDF ASASASDFDF
+4 3
+
+(2)
+4 10
+ASDF ASDASASDFF
+4 3
+
+(3)
+4 7
+ASDF AAASDFF
+4 4
+
+(4)
+4 11
+ASDF ASDFDFDASDF
+4 3
+
+(5)
+4 11
+ASDF ASDFDASASDF
+4 3
+
+(6)
+4 10
+ASDF ASDFDASDFF
+4 2
+
+(7)
+5 26
+QWERT QQWERQWQWQWERTRQQQWEQWERTT
+11 7
+*/
